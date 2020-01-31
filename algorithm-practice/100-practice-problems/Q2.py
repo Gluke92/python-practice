@@ -2,16 +2,29 @@
 # Suppose the following input is supplied to the
 # program: 8 Then, the output should be:40320
 
+n = int(input())
 
-def factorial(num):
-    count = 0
-    total = 1
-    while count <= num:
-        multiplier = num
-        total *= multiplier
-        num -= 1
-        count += 1
-    print(total)
+# while loop
 
 
-factorial(5)
+def factorial(n):
+    i = 1
+    fact = 1
+    while i <= n:
+        fact = fact * i
+        i = i + 1
+    print(fact)
+
+# for loop
+
+
+def fact2(n):
+    fact = 1
+    for i in range(1, n+1):
+        fact = fact * i
+    print(fact)
+
+
+# factorial(n)
+# fact2(n)
+lambda_fact3(n)
