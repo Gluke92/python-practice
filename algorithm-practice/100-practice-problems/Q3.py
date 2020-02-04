@@ -5,11 +5,28 @@
 #Output: {1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64}
 
 
+def gen_dict():
+    n = int(input('Give me an number! '))
+    dictionary = {x: x**2 for x in (range(1, n+1))}
+    print(dictionary)
+
+    print(dictionary[5])
+
+gen_dict()
+
+
+
+
+
+
+
+
+
+
 def comp_square():
     n = int(input('Give me a number!'))
 
     print({x: x**2 for x in list(range(1, n+1))})
-
 
 comp_square()
 

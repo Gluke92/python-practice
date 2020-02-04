@@ -25,6 +25,13 @@ def fact2(n):
     print(fact)
 
 
+def fact3(n):
+    fact = 1
+    for i in range(1, n+1):
+        fact *= i
+    print(fact)
+
+
 # factorial(n)
 # fact2(n)
 lambda_fact3(n)
